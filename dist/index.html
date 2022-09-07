@@ -13,12 +13,21 @@
 	</script>
 </body>
 <body>
-	<h1>Hello world</h1>
+	<h1 id="h1Id">Hello world</h1>
     <button id="my-button" onclick="clickFunction()">button</button>
 	
 	<script>function clickFunction() {
   console.log("hello world");
+  var changeH1 = document.getElementById("h1Id");
+  changeH1.outerHTML = "<h1>My notebook</h1>";
 }</script>
+	
+	<button id="add-data" onclick="addDataFunction()">click here</button>
+	<script>function addDataFunction() {}</script>
+	
+	<ul id="list">
+	
+	</ul>
 	
 
 	
