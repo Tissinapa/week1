@@ -27,14 +27,21 @@
 	<button id="add-data" onclick="addDataFunction()">click here</button>
 	<script>
 		function addDataFunction(){
-			
-		}	
+			const addElement = document.createElement("li");
+			const addText = document.createTextNode("Text to list");
+			//const addTextareaText = document.getElementById("textareaId");
+			addElement.appendChild(addText);
+			document.getElementById("list").appendChild(addElement);
+			//document.getElementById("list").appendChild(addTextareaText);
+		}
 	</script>
 	
 	<ul id="list">
-	
+		
 	</ul>
-	
+	<textarea id="textareaId">
+		
+	</textarea>
 
 	
 </body>
